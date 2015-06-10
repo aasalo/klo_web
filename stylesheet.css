@@ -1,0 +1,55 @@
+
+html {
+	display: table;
+	text-align: center;
+
+}
+
+#tableDiv {
+	margin: 0 auto;
+}
+
+#addDiv, #editDiv{
+	
+	display:none;
+}
+#formDiv {
+	display:none;
+}
+table#addressbook-table, th, tr{
+	
+	border: 2px solid black;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+td{
+	border: 2px solid black;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+    position: center;
+}
+
+a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+form#addressbook-form{
+  position: center;
+  width  : 800px;
+  height : 500px;
+}
+
+input#addressbook-save{
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+input#addressbook-save:hover {
+    background-color: #5E9DC8;
+}

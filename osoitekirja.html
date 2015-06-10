@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+    <title>Osoitekirja</title>
+</head>
+<body>
+<h1>Osoitekirja</h1>
+<input type="text" id="search" placeholder="Hakusanat..." />
+<div id = "tableDiv">
+<table id="addressbook-table">
+    <thead id="addressbook-head">
+        <th>ID</th>
+        <th>Nimi</th>
+        <th>Osoite</th>
+        <th>Puhelinnumero</th>
+        <th>Email</th>
+        <th>Toiminnot</th>
+    </thead>
+</div>
+</table>
+<div class="item button">
+    <div class="field"><input type="button" id="addressbook-add" value="Lisää nimi" onclick="revealForm()" /></div>
+</div>
+<div id="formDiv">
+<form id="addressbook-form">
+    <div id="addDiv">Lisää nimi</div>
+    <div id="editDiv">Muuta nimeä</div>
+    <div class="item text">
+        <label>Nimi:</label>
+        <div class="field"><input type="text" name="names" /></div>
+    </div>
+    <div class="item text">
+        <label>Osoite:</label>
+        <div class="field"><input type="text" name="address" /></div>
+    </div>
+    <div class="item text">
+        <label>Puhelinnumero:</label>
+        <div class="field"><input type="text" name="phone" /></div>
+    </div>
+    <div class="item text">
+        <label>Email:</label>
+        <div class="field"><input type="text" name="email" /></div>
+    </div>
+    <div class="button-wrapper">
+        <div class="item button">
+            <div class="field"><input type="button" id="addressbook-cancel" value="Peruuta" /></div>
+        </div>
+        <div class="item button button-default">
+            <div class="field"><input type="submit" id="addressbook-save" value="OK" /></div>
+        </div>
+    </div>
+    <input type="hidden" name="id_entry" value="0" />
+</form>
+</div>
+
+<script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>
